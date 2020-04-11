@@ -26,6 +26,8 @@ describe("Likes", () => {
     expect(response.body).toMatchObject({
       likes: 2
     });
+
+    console.log("RESPONSE BODY", response.body);
   });
 
   it("should not be able to like a repository that does not exist", async () => {
